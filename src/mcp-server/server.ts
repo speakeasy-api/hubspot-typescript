@@ -36,7 +36,7 @@ export function createMCPServer(deps: {
 }) {
   const server = new McpServer({
     name: "Hubspot",
-    version: "0.0.17",
+    version: "0.1.0",
   });
 
   const client = new HubspotCore({
