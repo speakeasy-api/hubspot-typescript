@@ -1,0 +1,21 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    HubspotCRM:
+        inputs:
+            - location: ./crm.json
+        registry:
+            location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-public/hubspot-crm
+targets:
+    hubspot:
+        target: typescript
+        source: HubspotCRM
+        publish:
+            npm:
+                token: $npm_token
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-public/hubspot-crm-typescript-code-samples
+            labelOverride:
+                fixedValue: Typescript (SDK)
+            blocking: false

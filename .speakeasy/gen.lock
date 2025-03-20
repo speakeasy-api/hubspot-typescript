@@ -1,0 +1,331 @@
+lockVersion: 2.0.0
+id: f81a812c-4cc0-49fc-86b0-dcfbc85954e3
+management:
+  docChecksum: 430e7d604ea696a88d6b34a8e18c9ff8
+  docVersion: v3
+  speakeasyVersion: 1.519.0
+  generationVersion: 2.552.1
+  releaseVersion: 0.0.17
+  configChecksum: df6a1d1247f12e6cdb18b8638baa2378
+  published: true
+features:
+  typescript:
+    acceptHeaders: 2.81.2
+    additionalDependencies: 0.1.0
+    constsAndDefaults: 0.1.11
+    core: 3.21.4
+    defaultEnabledRetries: 0.1.0
+    devContainers: 2.90.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    globalSecurity: 2.82.13
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.4
+    mcpServer: 0.8.0
+    nullables: 0.1.1
+    responseFormat: 0.2.3
+    retries: 2.83.0
+    sdkHooks: 0.2.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .npmignore
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/components/associatedid.md
+  - docs/models/components/associationcategory.md
+  - docs/models/components/associationspec.md
+  - docs/models/components/collectionresponseassociatedid.md
+  - docs/models/components/collectionresponsewithtotalsimplepublicobjectforwardpaging.md
+  - docs/models/components/errordetail.md
+  - docs/models/components/errort.md
+  - docs/models/components/filter.md
+  - docs/models/components/filtergroup.md
+  - docs/models/components/forwardpaging.md
+  - docs/models/components/nextpage.md
+  - docs/models/components/operator.md
+  - docs/models/components/paging.md
+  - docs/models/components/previouspage.md
+  - docs/models/components/publicassociationsforobject.md
+  - docs/models/components/publicobjectid.md
+  - docs/models/components/publicobjectsearchrequest.md
+  - docs/models/components/security.md
+  - docs/models/components/simplepublicobject.md
+  - docs/models/components/simplepublicobjectinput.md
+  - docs/models/components/simplepublicobjectinputforcreate.md
+  - docs/models/components/simplepublicobjectwithassociations.md
+  - docs/models/components/valuewithtimestamp.md
+  - docs/models/operations/createcontactresponse.md
+  - docs/models/operations/createdealresponse.md
+  - docs/models/operations/getcompanyrequest.md
+  - docs/models/operations/getcompanyresponse.md
+  - docs/models/operations/getcontactrequest.md
+  - docs/models/operations/getcontactresponse.md
+  - docs/models/operations/getdealrequest.md
+  - docs/models/operations/getdealresponse.md
+  - docs/models/operations/getpropertiesrequest.md
+  - docs/models/operations/getpropertiesresponse.md
+  - docs/models/operations/objecttype.md
+  - docs/models/operations/searchcompaniesresponse.md
+  - docs/models/operations/searchcontactsresponse.md
+  - docs/models/operations/searchdealsresponse.md
+  - docs/models/operations/updatecompanyrequest.md
+  - docs/models/operations/updatecompanyresponse.md
+  - docs/models/operations/updatecontactrequest.md
+  - docs/models/operations/updatecontactresponse.md
+  - docs/models/operations/updatedealrequest.md
+  - docs/models/operations/updatedealresponse.md
+  - docs/sdks/basic/README.md
+  - docs/sdks/hubspot/README.md
+  - docs/sdks/search/README.md
+  - eslint.config.mjs
+  - jsr.json
+  - package.json
+  - src/core.ts
+  - src/funcs/basicCreateContact.ts
+  - src/funcs/basicCreateDeal.ts
+  - src/funcs/basicGetCompany.ts
+  - src/funcs/basicGetContact.ts
+  - src/funcs/basicGetDeal.ts
+  - src/funcs/basicGetProperties.ts
+  - src/funcs/basicUpdateCompany.ts
+  - src/funcs/basicUpdateContact.ts
+  - src/funcs/basicUpdateDeal.ts
+  - src/funcs/searchSearchCompanies.ts
+  - src/funcs/searchSearchContacts.ts
+  - src/funcs/searchSearchDeals.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/env.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/mcp-server/build.mts
+  - src/mcp-server/cli.ts
+  - src/mcp-server/cli/start/command.ts
+  - src/mcp-server/cli/start/impl.ts
+  - src/mcp-server/console-logger.ts
+  - src/mcp-server/extensions.ts
+  - src/mcp-server/mcp-server.ts
+  - src/mcp-server/prompts.ts
+  - src/mcp-server/resources.ts
+  - src/mcp-server/scopes.ts
+  - src/mcp-server/server.ts
+  - src/mcp-server/shared.ts
+  - src/mcp-server/tools.ts
+  - src/mcp-server/tools/basicCreateContact.ts
+  - src/mcp-server/tools/basicCreateDeal.ts
+  - src/mcp-server/tools/basicGetCompany.ts
+  - src/mcp-server/tools/basicGetContact.ts
+  - src/mcp-server/tools/basicGetDeal.ts
+  - src/mcp-server/tools/basicGetProperties.ts
+  - src/mcp-server/tools/basicUpdateCompany.ts
+  - src/mcp-server/tools/basicUpdateContact.ts
+  - src/mcp-server/tools/basicUpdateDeal.ts
+  - src/mcp-server/tools/searchSearchCompanies.ts
+  - src/mcp-server/tools/searchSearchContacts.ts
+  - src/mcp-server/tools/searchSearchDeals.ts
+  - src/models/components/associatedid.ts
+  - src/models/components/associationspec.ts
+  - src/models/components/collectionresponseassociatedid.ts
+  - src/models/components/collectionresponsewithtotalsimplepublicobjectforwardpaging.ts
+  - src/models/components/error.ts
+  - src/models/components/errordetail.ts
+  - src/models/components/filter.ts
+  - src/models/components/filtergroup.ts
+  - src/models/components/forwardpaging.ts
+  - src/models/components/index.ts
+  - src/models/components/nextpage.ts
+  - src/models/components/paging.ts
+  - src/models/components/previouspage.ts
+  - src/models/components/publicassociationsforobject.ts
+  - src/models/components/publicobjectid.ts
+  - src/models/components/publicobjectsearchrequest.ts
+  - src/models/components/security.ts
+  - src/models/components/simplepublicobject.ts
+  - src/models/components/simplepublicobjectinput.ts
+  - src/models/components/simplepublicobjectinputforcreate.ts
+  - src/models/components/simplepublicobjectwithassociations.ts
+  - src/models/components/valuewithtimestamp.ts
+  - src/models/errors/apierror.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/operations/createcontact.ts
+  - src/models/operations/createdeal.ts
+  - src/models/operations/getcompany.ts
+  - src/models/operations/getcontact.ts
+  - src/models/operations/getdeal.ts
+  - src/models/operations/getproperties.ts
+  - src/models/operations/index.ts
+  - src/models/operations/searchcompanies.ts
+  - src/models/operations/searchcontacts.ts
+  - src/models/operations/searchdeals.ts
+  - src/models/operations/updatecompany.ts
+  - src/models/operations/updatecontact.ts
+  - src/models/operations/updatedeal.ts
+  - src/sdk/basic.ts
+  - src/sdk/index.ts
+  - src/sdk/sdk.ts
+  - src/sdk/search.ts
+  - src/types/async.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - tsconfig.json
+examples:
+  getProperties:
+    speakeasy-default-get-properties:
+      parameters:
+        path:
+          objectType: "deals"
+      responses:
+        "200":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        default:
+          '*/*': "0xDC1CcbAA6F"
+  getCompany:
+    speakeasy-default-get-company:
+      parameters:
+        path:
+          companyId: "<id>"
+        query:
+          archived: false
+      responses:
+        "200":
+          application/json: {"associations": {"key": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": []}}, "createdAt": "2025-10-24T12:05:59.595Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2023-04-22T05:13:50.650Z"}
+        default:
+          '*/*': "0xBCBF4Fa1AB"
+  updateCompany:
+    speakeasy-default-update-company:
+      parameters:
+        path:
+          companyId: "<id>"
+        query: {}
+      requestBody:
+        application/json: {"properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}}
+      responses:
+        "200":
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+        default:
+          '*/*': "0xb3E6c6BfBC"
+  getContact:
+    speakeasy-default-get-contact:
+      parameters:
+        path:
+          contactId: "<id>"
+        query:
+          archived: false
+      responses:
+        "200":
+          application/json: {"associations": {"key": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": []}}, "createdAt": "2024-08-17T15:34:51.440Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2024-01-04T02:16:38.002Z"}
+        default:
+          '*/*': "0xaE60343E90"
+  updateContact:
+    speakeasy-default-update-contact:
+      parameters:
+        path:
+          contactId: "<id>"
+      requestBody:
+        application/json: {"properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}}
+      responses:
+        "200":
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+        default:
+          '*/*': "0x3b85af6eBc"
+  createContact:
+    speakeasy-default-create-contact:
+      requestBody:
+        application/json: {"associations": [{"types": [{"associationCategory": "HUBSPOT_DEFINED", "associationTypeId": 2}], "to": {"id": "101"}}], "properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
+      responses:
+        "201":
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+        default:
+          '*/*': "0xCaDC2a12a5"
+  getDeal:
+    speakeasy-default-get-deal:
+      parameters:
+        path:
+          dealId: "<id>"
+        query:
+          archived: false
+      responses:
+        "200":
+          application/json: {"associations": {"key": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": []}, "key1": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"id": "<id>", "type": "<value>"}, {"id": "<id>", "type": "<value>"}, {"id": "<id>", "type": "<value>"}]}}, "createdAt": "2023-07-20T20:21:19.136Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2024-03-20T16:06:40.704Z"}
+        default:
+          '*/*': "0xd7Dbec5428"
+  updateDeal:
+    speakeasy-default-update-deal:
+      parameters:
+        path:
+          dealId: "<id>"
+        query: {}
+      requestBody:
+        application/json: {"properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}}
+      responses:
+        "200":
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+        default:
+          '*/*': "0xbd6bf0D753"
+  createDeal:
+    speakeasy-default-create-deal:
+      requestBody:
+        application/json: {"associations": [{"types": [{"associationCategory": "HUBSPOT_DEFINED", "associationTypeId": 2}], "to": {"id": "101"}}], "properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
+      responses:
+        "201":
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+        default:
+          '*/*': "0xad38C8Ad0A"
+  searchCompanies:
+    speakeasy-default-search-companies:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"total": 417690, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
+        default:
+          '*/*': "0x35e6bBbc27"
+  searchContacts:
+    speakeasy-default-search-contacts:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"total": 748860, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
+        default:
+          '*/*': "0x2f94F8F016"
+  searchDeals:
+    speakeasy-default-search-deals:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"total": 265805, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
+        default:
+          '*/*': "0x943fFbCFA3"
+examplesVersion: 1.0.0
+generatedTests: {}

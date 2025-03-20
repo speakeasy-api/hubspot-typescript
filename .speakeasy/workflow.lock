@@ -1,0 +1,46 @@
+speakeasyVersion: 1.519.0
+sources:
+    CRM:
+        sourceNamespace: crm
+        sourceRevisionDigest: sha256:98e0eb2e3ad458c2875e1373a80e54cd9593414c85b692e9d95c480756c5ab28
+        sourceBlobDigest: sha256:377ac2cc2f8551003f451774c9281bc4f66170cf1f06e33191e39748c74d614f
+        tags:
+            - latest
+            - v3
+    HubspotCRM:
+        sourceNamespace: hubspot-crm
+        sourceRevisionDigest: sha256:f8a7043d0b30d9a945a488dae13b8d0f570210f50a21545ba74051d928dfbbdc
+        sourceBlobDigest: sha256:fd3bb26f0d19170b271fae7398ffb1b2dbe48799b6e7c4dee95ec5c58302f332
+        tags:
+            - latest
+            - v3
+targets:
+    hubspot:
+        source: HubspotCRM
+        sourceNamespace: hubspot-crm
+        sourceRevisionDigest: sha256:f8a7043d0b30d9a945a488dae13b8d0f570210f50a21545ba74051d928dfbbdc
+        sourceBlobDigest: sha256:fd3bb26f0d19170b271fae7398ffb1b2dbe48799b6e7c4dee95ec5c58302f332
+        codeSamplesNamespace: hubspot-crm-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:d14133faad231e4d6bcd98830e8eb14378f8254264fef40e257dbf1db20bdf20
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        HubspotCRM:
+            inputs:
+                - location: ./crm.json
+            registry:
+                location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-public/hubspot-crm
+    targets:
+        hubspot:
+            target: typescript
+            source: HubspotCRM
+            publish:
+                npm:
+                    token: $npm_token
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-public/hubspot-crm-typescript-code-samples
+                labelOverride:
+                    fixedValue: Typescript (SDK)
+                blocking: false
