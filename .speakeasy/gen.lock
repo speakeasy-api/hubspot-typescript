@@ -3,10 +3,10 @@ id: f81a812c-4cc0-49fc-86b0-dcfbc85954e3
 management:
   docChecksum: 430e7d604ea696a88d6b34a8e18c9ff8
   docVersion: v3
-  speakeasyVersion: 1.521.1
-  generationVersion: 2.558.5
-  releaseVersion: 0.1.0
-  configChecksum: ced1f77351976ac9d8b161d9f27f05f8
+  speakeasyVersion: 1.531.2
+  generationVersion: 2.570.0
+  releaseVersion: 0.1.1
+  configChecksum: f8c4e42931049a95d23040c9b4529a1b
   repoURL: https://github.com/speakeasy-api/hubspot-typescript.git
   installationURL: https://github.com/speakeasy-api/hubspot-typescript
   published: true
@@ -15,7 +15,7 @@ features:
     acceptHeaders: 2.81.2
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.11
-    core: 3.21.4
+    core: 3.21.5
     defaultEnabledRetries: 0.1.0
     devContainers: 2.90.0
     enumUnions: 0.1.0
@@ -24,7 +24,7 @@ features:
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
     globalServerURLs: 2.82.4
-    mcpServer: 0.9.0
+    mcpServer: 0.9.1
     nullables: 0.1.1
     responseFormat: 0.2.3
     retries: 2.83.0
@@ -207,7 +207,7 @@ examples:
           objectType: "deals"
       responses:
         "200":
-          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+          application/json: {"key": "<value>", "key1": "<value>"}
         default:
           '*/*': "0xDC1CcbAA6F"
   getCompany:
@@ -329,5 +329,5 @@ examples:
           application/json: {"total": 265805, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
         default:
           '*/*': "0x943fFbCFA3"
-examplesVersion: 1.0.0
+examplesVersion: 1.0.1
 generatedTests: {}
