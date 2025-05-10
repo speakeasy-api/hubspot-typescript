@@ -7,7 +7,7 @@ import { AssociationSpec } from "mcp-hubspot/models/components";
 
 let value: AssociationSpec = {
   associationCategory: "USER_DEFINED",
-  associationTypeId: 652103,
+  associationTypeId: 754129,
 };
 ```
 
