@@ -5,7 +5,7 @@
 ```typescript
 import { AssociationCategory } from "mcp-hubspot/models/components";
 
-let value: AssociationCategory = "USER_DEFINED";
+let value: AssociationCategory = "HUBSPOT_DEFINED";
 ```
 
 ## Values
