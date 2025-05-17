@@ -30,7 +30,7 @@ const hubspot = new Hubspot({
 
 async function run() {
   const result = await hubspot.basic.getProperties({
-    objectType: "deals",
+    objectType: "contacts",
   });
 
   // Handle the result
@@ -56,7 +56,7 @@ const hubspot = new HubspotCore({
 
 async function run() {
   const res = await basicGetProperties(hubspot, {
-    objectType: "deals",
+    objectType: "contacts",
   });
 
   if (!res.ok) {

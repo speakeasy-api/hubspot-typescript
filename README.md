@@ -181,7 +181,7 @@ const hubspot = new Hubspot({
 
 async function run() {
   const result = await hubspot.basic.getProperties({
-    objectType: "deals",
+    objectType: "contacts",
   });
 
   // Handle the result
@@ -214,7 +214,7 @@ const hubspot = new Hubspot({
 
 async function run() {
   const result = await hubspot.basic.getProperties({
-    objectType: "deals",
+    objectType: "contacts",
   });
 
   // Handle the result
@@ -300,7 +300,7 @@ const hubspot = new Hubspot({
 
 async function run() {
   const result = await hubspot.basic.getProperties({
-    objectType: "deals",
+    objectType: "contacts",
   }, {
     retries: {
       strategy: "backoff",
@@ -342,7 +342,7 @@ const hubspot = new Hubspot({
 
 async function run() {
   const result = await hubspot.basic.getProperties({
-    objectType: "deals",
+    objectType: "contacts",
   });
 
   // Handle the result
@@ -375,7 +375,7 @@ async function run() {
   let result;
   try {
     result = await hubspot.basic.getProperties({
-      objectType: "deals",
+      objectType: "contacts",
     });
 
     // Handle the result
@@ -439,7 +439,7 @@ const hubspot = new Hubspot({
 
 async function run() {
   const result = await hubspot.basic.getProperties({
-    objectType: "deals",
+    objectType: "contacts",
   });
 
   // Handle the result

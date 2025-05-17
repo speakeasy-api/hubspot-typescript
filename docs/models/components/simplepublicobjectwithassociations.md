@@ -6,7 +6,7 @@
 import { SimplePublicObjectWithAssociations } from "mcp-hubspot/models/components";
 
 let value: SimplePublicObjectWithAssociations = {
-  createdAt: new Date("2024-04-14T22:19:54.875Z"),
+  createdAt: new Date("2025-06-21T16:54:22.539Z"),
   id: "<id>",
   properties: {
     "amount": "1500.00",
@@ -18,7 +18,7 @@ let value: SimplePublicObjectWithAssociations = {
     "hubspot_owner_id": "910901",
     "pipeline": "default",
   },
-  updatedAt: new Date("2023-05-29T11:30:35.227Z"),
+  updatedAt: new Date("2024-10-01T05:33:36.814Z"),
 };
 ```
 
