@@ -6,12 +6,14 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { HubspotCore } from "../core.js";
 import { SDKOptions } from "../lib/config.js";
 import type { ConsoleLogger } from "./console-logger.js";
+import { Register } from "./extensions.js";
 import { createRegisterPrompt } from "./prompts.js";
 import {
   createRegisterResource,
   createRegisterResourceTemplate,
 } from "./resources.js";
-import { MCPScope, mcpScopes } from "./scopes.js";
+import { MCPScope } from "./scopes.js";
+import { registerMCPExtensions } from "./server.extensions.js";
 import { createRegisterTool } from "./tools.js";
 import { tool$basicCreateContact } from "./tools/basicCreateContact.js";
 import { tool$basicCreateDeal } from "./tools/basicCreateDeal.js";
@@ -36,7 +38,7 @@ export function createMCPServer(deps: {
 }) {
   const server = new McpServer({
     name: "Hubspot",
-    version: "0.1.0",
+    version: "0.1.1",
   });
 
   const client = new HubspotCore({
@@ -45,7 +47,7 @@ export function createMCPServer(deps: {
     serverIdx: deps.serverIdx,
   });
 
-  const scopes = new Set(deps.scopes ?? mcpScopes);
+  const scopes = new Set(deps.scopes);
 
   const allowedTools = deps.allowedTools && new Set(deps.allowedTools);
   const tool = createRegisterTool(
@@ -78,6 +80,8 @@ export function createMCPServer(deps: {
   tool(tool$searchSearchCompanies);
   tool(tool$searchSearchContacts);
   tool(tool$searchSearchDeals);
+
+  registerMCPExtensions(register satisfies Register);
 
   return server;
 }

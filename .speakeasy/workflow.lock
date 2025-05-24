@@ -1,4 +1,4 @@
-speakeasyVersion: 1.521.1
+speakeasyVersion: 1.551.0
 sources:
     CRM:
         sourceNamespace: crm
@@ -9,20 +9,20 @@ sources:
             - v3
     HubspotCRM:
         sourceNamespace: hubspot-crm
-        sourceRevisionDigest: sha256:068f049648f508cd2c1f0b3f74fdec83a2920b10763541b84a05644ba5fac7f9
+        sourceRevisionDigest: sha256:4b920509e176a73262dfd4a386791f13a0bdbd538caf6dee3f680981dbfb657b
         sourceBlobDigest: sha256:fd3bb26f0d19170b271fae7398ffb1b2dbe48799b6e7c4dee95ec5c58302f332
         tags:
             - latest
-            - speakeasy-sdk-regen-1742493224
+            - speakeasy-sdk-regen-1743711404
             - v3
 targets:
     hubspot:
         source: HubspotCRM
         sourceNamespace: hubspot-crm
-        sourceRevisionDigest: sha256:068f049648f508cd2c1f0b3f74fdec83a2920b10763541b84a05644ba5fac7f9
+        sourceRevisionDigest: sha256:4b920509e176a73262dfd4a386791f13a0bdbd538caf6dee3f680981dbfb657b
         sourceBlobDigest: sha256:fd3bb26f0d19170b271fae7398ffb1b2dbe48799b6e7c4dee95ec5c58302f332
         codeSamplesNamespace: hubspot-crm-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:d61859db7b587ca10a3a1abaff25b520db3c9e1e3f8cfde32e27cd069c6e5a2a
+        codeSamplesRevisionDigest: sha256:af8ce82b9dd4f94ca541a02ae8a8d50ae7089964b5794b4bbe4823cdc48032bf
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest

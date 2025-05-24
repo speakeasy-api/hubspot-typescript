@@ -9,7 +9,7 @@ let value: PublicAssociationsForObject = {
   types: [
     {
       associationCategory: "USER_DEFINED",
-      associationTypeId: 590873,
+      associationTypeId: 321523,
     },
   ],
   to: {

@@ -27,6 +27,6 @@ const value: components.SimplePublicObject = {
 ### `Uint8Array`
 
 ```typescript
-const value: Uint8Array = new TextEncoder().encode("0x62691fc5b2");
+const value: Uint8Array = new TextEncoder().encode("0xdC7D3f4be0");
 ```
 

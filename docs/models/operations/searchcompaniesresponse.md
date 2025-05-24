@@ -8,7 +8,7 @@
 ```typescript
 const value:
   components.CollectionResponseWithTotalSimplePublicObjectForwardPaging = {
-    total: 828940,
+    total: 371377,
     paging: {
       next: {
         link: "?after=NTI1Cg%3D%3D",
@@ -39,6 +39,6 @@ const value:
 ### `Uint8Array`
 
 ```typescript
-const value: Uint8Array = new TextEncoder().encode("0x0e5AF5cdc4");
+const value: Uint8Array = new TextEncoder().encode("0xdC7D3f4be0");
 ```
 

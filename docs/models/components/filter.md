@@ -7,7 +7,7 @@ import { Filter } from "mcp-hubspot/models/components";
 
 let value: Filter = {
   propertyName: "<value>",
-  operator: "GTE",
+  operator: "IN",
 };
 ```
 

@@ -7,7 +7,7 @@
 
 ```typescript
 const value: components.SimplePublicObjectWithAssociations = {
-  createdAt: new Date("2024-09-14T13:50:38.886Z"),
+  createdAt: new Date("2024-11-28T12:17:43.309Z"),
   id: "<id>",
   properties: {
     "amount": "1500.00",
@@ -19,13 +19,13 @@ const value: components.SimplePublicObjectWithAssociations = {
     "hubspot_owner_id": "910901",
     "pipeline": "default",
   },
-  updatedAt: new Date("2025-10-11T10:53:38.306Z"),
+  updatedAt: new Date("2024-05-22T04:57:54.841Z"),
 };
 ```
 
 ### `Uint8Array`
 
 ```typescript
-const value: Uint8Array = new TextEncoder().encode("0x110CBDFBaB");
+const value: Uint8Array = new TextEncoder().encode("0xdC7D3f4be0");
 ```
 
