@@ -6,7 +6,7 @@
 import { CollectionResponseWithTotalSimplePublicObjectForwardPaging } from "mcp-hubspot/models/components";
 
 let value: CollectionResponseWithTotalSimplePublicObjectForwardPaging = {
-  total: 431418,
+  total: 932692,
   paging: {
     next: {
       link: "?after=NTI1Cg%3D%3D",

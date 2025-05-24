@@ -30,7 +30,7 @@ const hubspot = new Hubspot({
 
 async function run() {
   const result = await hubspot.basic.getProperties({
-    objectType: "deals",
+    objectType: "contacts",
   });
 
   // Handle the result
@@ -56,7 +56,7 @@ const hubspot = new HubspotCore({
 
 async function run() {
   const res = await basicGetProperties(hubspot, {
-    objectType: "deals",
+    objectType: "contacts",
   });
 
   if (!res.ok) {
@@ -185,13 +185,12 @@ async function run() {
     companyId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
@@ -222,13 +221,12 @@ async function run() {
     companyId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
@@ -359,13 +357,12 @@ async function run() {
     contactId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
@@ -396,13 +393,12 @@ async function run() {
     contactId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
@@ -649,13 +645,12 @@ async function run() {
     dealId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
@@ -686,13 +681,12 @@ async function run() {
     dealId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });

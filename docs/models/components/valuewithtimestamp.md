@@ -8,7 +8,7 @@ import { ValueWithTimestamp } from "mcp-hubspot/models/components";
 let value: ValueWithTimestamp = {
   sourceType: "<value>",
   value: "<value>",
-  timestamp: new Date("2023-11-23T22:01:05.887Z"),
+  timestamp: new Date("2023-03-21T16:01:07.532Z"),
 };
 ```
 

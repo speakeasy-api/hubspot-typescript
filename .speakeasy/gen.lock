@@ -3,10 +3,10 @@ id: f81a812c-4cc0-49fc-86b0-dcfbc85954e3
 management:
   docChecksum: 430e7d604ea696a88d6b34a8e18c9ff8
   docVersion: v3
-  speakeasyVersion: 1.521.1
-  generationVersion: 2.558.5
-  releaseVersion: 0.1.0
-  configChecksum: ced1f77351976ac9d8b161d9f27f05f8
+  speakeasyVersion: 1.551.0
+  generationVersion: 2.610.0
+  releaseVersion: 0.1.1
+  configChecksum: 7c9c7337070bedc7d2afd208a8da2f39
   repoURL: https://github.com/speakeasy-api/hubspot-typescript.git
   installationURL: https://github.com/speakeasy-api/hubspot-typescript
   published: true
@@ -15,7 +15,7 @@ features:
     acceptHeaders: 2.81.2
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.11
-    core: 3.21.4
+    core: 3.21.9
     defaultEnabledRetries: 0.1.0
     devContainers: 2.90.0
     enumUnions: 0.1.0
@@ -23,8 +23,8 @@ features:
     globalSecurity: 2.82.13
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
-    globalServerURLs: 2.82.4
-    mcpServer: 0.9.0
+    globalServerURLs: 2.82.5
+    mcpServer: 0.9.2
     nullables: 0.1.1
     responseFormat: 0.2.3
     retries: 2.83.0
@@ -204,12 +204,12 @@ examples:
     speakeasy-default-get-properties:
       parameters:
         path:
-          objectType: "deals"
+          objectType: "contacts"
       responses:
         "200":
           application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
         default:
-          '*/*': "0xDC1CcbAA6F"
+          '*/*': "0x6AebEB6dfa"
   getCompany:
     speakeasy-default-get-company:
       parameters:
@@ -219,22 +219,21 @@ examples:
           archived: false
       responses:
         "200":
-          application/json: {"associations": {"key": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": []}}, "createdAt": "2025-10-24T12:05:59.595Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2023-04-22T05:13:50.650Z"}
+          application/json: {"createdAt": "2025-08-25T15:16:09.699Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2025-05-22T12:21:57.653Z"}
         default:
-          '*/*': "0xBCBF4Fa1AB"
+          '*/*': "0x095Bfee7E8"
   updateCompany:
     speakeasy-default-update-company:
       parameters:
         path:
           companyId: "<id>"
-        query: {}
       requestBody:
-        application/json: {"properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}}
+        application/json: {"properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
       responses:
         "200":
-          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
         default:
-          '*/*': "0xb3E6c6BfBC"
+          '*/*': "0xdceFCcA8Bb"
   getContact:
     speakeasy-default-get-contact:
       parameters:
@@ -244,30 +243,30 @@ examples:
           archived: false
       responses:
         "200":
-          application/json: {"associations": {"key": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": []}}, "createdAt": "2024-08-17T15:34:51.440Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2024-01-04T02:16:38.002Z"}
+          application/json: {"createdAt": "2024-04-26T22:09:40.861Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2024-05-07T19:22:28.190Z"}
         default:
-          '*/*': "0xaE60343E90"
+          '*/*': "0x8ef9DAF6B0"
   updateContact:
     speakeasy-default-update-contact:
       parameters:
         path:
           contactId: "<id>"
       requestBody:
-        application/json: {"properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}}
+        application/json: {"properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
       responses:
         "200":
-          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
         default:
-          '*/*': "0x3b85af6eBc"
+          '*/*': "0xded1d6FB0E"
   createContact:
     speakeasy-default-create-contact:
       requestBody:
         application/json: {"associations": [{"types": [{"associationCategory": "HUBSPOT_DEFINED", "associationTypeId": 2}], "to": {"id": "101"}}], "properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
       responses:
         "201":
-          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
         default:
-          '*/*': "0xCaDC2a12a5"
+          '*/*': "0x699Faed7d0"
   getDeal:
     speakeasy-default-get-deal:
       parameters:
@@ -277,57 +276,56 @@ examples:
           archived: false
       responses:
         "200":
-          application/json: {"associations": {"key": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": []}, "key1": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"id": "<id>", "type": "<value>"}, {"id": "<id>", "type": "<value>"}, {"id": "<id>", "type": "<value>"}]}}, "createdAt": "2023-07-20T20:21:19.136Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2024-03-20T16:06:40.704Z"}
+          application/json: {"createdAt": "2023-09-13T04:14:42.703Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2024-11-30T01:20:41.885Z"}
         default:
-          '*/*': "0xd7Dbec5428"
+          '*/*': "0x23d01cBbaF"
   updateDeal:
     speakeasy-default-update-deal:
       parameters:
         path:
           dealId: "<id>"
-        query: {}
       requestBody:
-        application/json: {"properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}}
+        application/json: {"properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
       responses:
         "200":
-          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
         default:
-          '*/*': "0xbd6bf0D753"
+          '*/*': "0xa54Ebb05D3"
   createDeal:
     speakeasy-default-create-deal:
       requestBody:
         application/json: {"associations": [{"types": [{"associationCategory": "HUBSPOT_DEFINED", "associationTypeId": 2}], "to": {"id": "101"}}], "properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
       responses:
         "201":
-          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
         default:
-          '*/*': "0xad38C8Ad0A"
+          '*/*': "0xCB53a70BeA"
   searchCompanies:
     speakeasy-default-search-companies:
       requestBody:
         application/json: {}
       responses:
         "200":
-          application/json: {"total": 417690, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
+          application/json: {"total": 243268, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
         default:
-          '*/*': "0x35e6bBbc27"
+          '*/*': "0x7194B2Fbdc"
   searchContacts:
     speakeasy-default-search-contacts:
       requestBody:
         application/json: {}
       responses:
         "200":
-          application/json: {"total": 748860, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
+          application/json: {"total": 473738, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
         default:
-          '*/*': "0x2f94F8F016"
+          '*/*': "0xD472AaCEA0"
   searchDeals:
     speakeasy-default-search-deals:
       requestBody:
         application/json: {}
       responses:
         "200":
-          application/json: {"total": 265805, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
+          application/json: {"total": 99162, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
         default:
-          '*/*': "0x943fFbCFA3"
-examplesVersion: 1.0.0
+          '*/*': "0x1bbfBe91ad"
+examplesVersion: 1.0.2
 generatedTests: {}
