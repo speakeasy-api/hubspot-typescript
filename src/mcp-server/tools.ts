@@ -5,7 +5,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { RequestHandlerExtra } from "@modelcontextprotocol/sdk/shared/protocol.js";
 import { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
-import { objectOutputType, ZodRawShape, ZodTypeAny } from "zod";
+import { objectOutputType, ZodRawShape, ZodTypeAny } from "zod/v3";
 import { HubspotCore } from "../core.js";
 import { ConsoleLogger } from "./console-logger.js";
 import { MCPScope } from "./scopes.js";
@@ -102,12 +102,15 @@ export function createRegisterTool(
       return;
     }
 
-    const toolScopes = tool.scopes ?? [];
-    if (allowedScopes.size > 0 && toolScopes.length === 0) {
+    const scopes = tool.scopes ?? [];
+    if (allowedScopes.size > 0 && scopes.length === 0) {
       return;
     }
 
-    if (!toolScopes.every((s) => allowedScopes.has(s))) {
+    if (
+      allowedScopes.size > 0
+      && !scopes.every((s: MCPScope) => allowedScopes.has(s))
+    ) {
       return;
     }
 

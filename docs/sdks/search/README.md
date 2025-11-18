@@ -15,6 +15,7 @@ Search for companies by filtering on properties, searching through associations,
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="searchCompanies" method="post" path="/crm/v3/objects/companies/search" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -25,7 +26,6 @@ const hubspot = new Hubspot({
 async function run() {
   const result = await hubspot.search.searchCompanies({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -48,15 +48,12 @@ const hubspot = new HubspotCore({
 
 async function run() {
   const res = await searchSearchCompanies(hubspot, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("searchSearchCompanies failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -87,6 +84,7 @@ Search for contacts by filtering on properties, searching through associations, 
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="searchContacts" method="post" path="/crm/v3/objects/contacts/search" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -97,7 +95,6 @@ const hubspot = new Hubspot({
 async function run() {
   const result = await hubspot.search.searchContacts({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -120,15 +117,12 @@ const hubspot = new HubspotCore({
 
 async function run() {
   const res = await searchSearchContacts(hubspot, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("searchSearchContacts failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -157,6 +151,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="searchDeals" method="post" path="/crm/v3/objects/deals/search" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -167,7 +162,6 @@ const hubspot = new Hubspot({
 async function run() {
   const result = await hubspot.search.searchDeals({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -190,15 +184,12 @@ const hubspot = new HubspotCore({
 
 async function run() {
   const res = await searchSearchDeals(hubspot, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("searchSearchDeals failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

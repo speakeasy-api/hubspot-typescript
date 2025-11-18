@@ -8,10 +8,9 @@ const hubspot = new Hubspot({
 
 async function run() {
   const result = await hubspot.basic.getProperties({
-    objectType: "deals",
+    objectType: "contacts",
   });
 
-  // Handle the result
   console.log(result);
 }
 

@@ -11,7 +11,7 @@ import {
   ZodType,
   ZodTypeAny,
   ZodTypeDef,
-} from "zod";
+} from "zod/v3";
 import { HubspotCore } from "../core.js";
 import { ConsoleLogger } from "./console-logger.js";
 import { MCPScope } from "./scopes.js";
@@ -74,7 +74,14 @@ export function createRegisterPrompt(
     prompt: PromptDefinition<A>,
   ): void => {
     const scopes = prompt.scopes ?? [];
-    if (!scopes.every((s: MCPScope) => allowedScopes.has(s))) {
+    if (allowedScopes.size > 0 && scopes.length === 0) {
+      return;
+    }
+
+    if (
+      allowedScopes.size > 0
+      && !scopes.every((s: MCPScope) => allowedScopes.has(s))
+    ) {
       return;
     }
 

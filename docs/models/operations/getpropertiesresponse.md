@@ -8,12 +8,14 @@
 ```typescript
 const value: { [k: string]: any } = {
   "key": "<value>",
+  "key1": "<value>",
+  "key2": "<value>",
 };
 ```
 
 ### `Uint8Array`
 
 ```typescript
-const value: Uint8Array = new TextEncoder().encode("0xdb9e9DF8Bb");
+const value: Uint8Array = new TextEncoder().encode("0xdC7D3f4be0");
 ```
 

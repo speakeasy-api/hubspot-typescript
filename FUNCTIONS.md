@@ -21,7 +21,6 @@ specific category of applications.
 ```typescript
 import { HubspotCore } from "mcp-hubspot/core.js";
 import { basicGetProperties } from "mcp-hubspot/funcs/basicGetProperties.js";
-import { SDKValidationError } from "mcp-hubspot/models/errors/sdkvalidationerror.js";
 
 // Use `HubspotCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -31,30 +30,14 @@ const hubspot = new HubspotCore({
 
 async function run() {
   const res = await basicGetProperties(hubspot, {
-    objectType: "deals",
+    objectType: "contacts",
   });
-
-  switch (true) {
-    case res.ok:
-      // The success case will be handled outside of the switch block
-      break;
-    case res.error instanceof SDKValidationError:
-      // Pretty-print validation errors.
-      return console.log(res.error.pretty());
-    case res.error instanceof Error:
-      return console.log(res.error);
-    default:
-      // TypeScript's type checking will fail on the following line if the above
-      // cases were not exhaustive.
-      res.error satisfies never;
-      throw new Error("Assertion failed: expected error checks to be exhaustive: " + res.error);
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("basicGetProperties failed:", res.error);
   }
-
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
