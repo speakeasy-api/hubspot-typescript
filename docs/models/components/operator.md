@@ -7,7 +7,7 @@ null
 ```typescript
 import { Operator } from "mcp-hubspot/models/components";
 
-let value: Operator = "GT";
+let value: Operator = "BETWEEN";
 ```
 
 ## Values

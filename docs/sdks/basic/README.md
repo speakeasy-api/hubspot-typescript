@@ -1,5 +1,4 @@
 # Basic
-(*basic*)
 
 ## Overview
 
@@ -21,6 +20,7 @@ Get the list of all properties that are available on any hubspot object.
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="getProperties" method="get" path="/crm/v3/properties/{objectType}" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -30,10 +30,9 @@ const hubspot = new Hubspot({
 
 async function run() {
   const result = await hubspot.basic.getProperties({
-    objectType: "deals",
+    objectType: "contacts",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -56,17 +55,14 @@ const hubspot = new HubspotCore({
 
 async function run() {
   const res = await basicGetProperties(hubspot, {
-    objectType: "deals",
+    objectType: "contacts",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("basicGetProperties failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -97,6 +93,7 @@ Retrieve a company by its ID (`companyId`) or by a unique property (`idProperty`
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="getCompany" method="get" path="/crm/v3/objects/companies/{companyId}" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -109,7 +106,6 @@ async function run() {
     companyId: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -134,15 +130,12 @@ async function run() {
   const res = await basicGetCompany(hubspot, {
     companyId: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("basicGetCompany failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -173,6 +166,7 @@ Update a company by ID (`companyId`) or unique property value (`idProperty`). Pr
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="updateCompany" method="patch" path="/crm/v3/objects/companies/{companyId}" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -185,18 +179,16 @@ async function run() {
     companyId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -222,25 +214,21 @@ async function run() {
     companyId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("basicUpdateCompany failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -271,6 +259,7 @@ Retrieve a contact by its ID (`contactId`) or by a unique property (`idProperty`
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="getContact" method="get" path="/crm/v3/objects/contacts/{contactId}" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -283,7 +272,6 @@ async function run() {
     contactId: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -308,15 +296,12 @@ async function run() {
   const res = await basicGetContact(hubspot, {
     contactId: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("basicGetContact failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -347,6 +332,7 @@ Update a contact by ID (`contactId`) or unique property value (`idProperty`). Pr
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="updateContact" method="patch" path="/crm/v3/objects/contacts/{contactId}" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -359,18 +345,16 @@ async function run() {
     contactId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -396,25 +380,21 @@ async function run() {
     contactId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("basicUpdateContact failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -445,6 +425,7 @@ Create a single contact. Include a `properties` object to define [property value
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="createContact" method="post" path="/crm/v3/objects/contacts" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -477,7 +458,6 @@ async function run() {
     },
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -522,15 +502,12 @@ async function run() {
       "hubspot_owner_id": "910901",
     },
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("basicCreateContact failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -561,6 +538,7 @@ Read a Deal Object identified by `{dealId}`. `{dealId}` refers to the internal o
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="getDeal" method="get" path="/crm/v3/objects/deals/{dealId}" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -573,7 +551,6 @@ async function run() {
     dealId: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -598,15 +575,12 @@ async function run() {
   const res = await basicGetDeal(hubspot, {
     dealId: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("basicGetDeal failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -637,6 +611,7 @@ Perform a partial update of an Object identified by `{dealId}`. `{dealId}` refer
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="updateDeal" method="patch" path="/crm/v3/objects/deals/{dealId}" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -649,18 +624,16 @@ async function run() {
     dealId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -686,25 +659,21 @@ async function run() {
     dealId: "<id>",
     simplePublicObjectInput: {
       properties: {
-        "property_date": "1572480000000",
-        "property_radio": "option_1",
-        "property_number": "17",
-        "property_string": "value",
-        "property_checkbox": "false",
-        "property_dropdown": "choice_b",
-        "property_multiple_checkboxes": "chocolate;strawberry",
+        "amount": "1500.00",
+        "dealname": "Custom data integrations",
+        "pipeline": "default",
+        "closedate": "2019-12-07T16:50:06.678Z",
+        "dealstage": "presentationscheduled",
+        "hubspot_owner_id": "910901",
       },
     },
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("basicUpdateDeal failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -735,6 +704,7 @@ Create a deal with the given properties and return a copy of the object, includi
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="createDeal" method="post" path="/crm/v3/objects/deals" -->
 ```typescript
 import { Hubspot } from "mcp-hubspot";
 
@@ -767,7 +737,6 @@ async function run() {
     },
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -812,15 +781,12 @@ async function run() {
       "hubspot_owner_id": "910901",
     },
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("basicCreateDeal failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

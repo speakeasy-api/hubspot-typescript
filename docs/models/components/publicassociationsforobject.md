@@ -8,8 +8,8 @@ import { PublicAssociationsForObject } from "mcp-hubspot/models/components";
 let value: PublicAssociationsForObject = {
   types: [
     {
-      associationCategory: "USER_DEFINED",
-      associationTypeId: 590873,
+      associationCategory: "HUBSPOT_DEFINED",
+      associationTypeId: 551132,
     },
   ],
   to: {

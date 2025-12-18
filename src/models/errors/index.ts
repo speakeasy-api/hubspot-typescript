@@ -4,4 +4,6 @@
 
 export * from "./apierror.js";
 export * from "./httpclienterrors.js";
+export * from "./hubspoterror.js";
+export * from "./responsevalidationerror.js";
 export * from "./sdkvalidationerror.js";

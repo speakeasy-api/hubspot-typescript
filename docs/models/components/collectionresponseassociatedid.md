@@ -12,12 +12,7 @@ let value: CollectionResponseAssociatedId = {
       after: "NTI1Cg%3D%3D",
     },
   },
-  results: [
-    {
-      id: "<id>",
-      type: "<value>",
-    },
-  ],
+  results: [],
 };
 ```
 

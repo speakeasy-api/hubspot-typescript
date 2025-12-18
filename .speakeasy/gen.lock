@@ -3,32 +3,867 @@ id: f81a812c-4cc0-49fc-86b0-dcfbc85954e3
 management:
   docChecksum: 430e7d604ea696a88d6b34a8e18c9ff8
   docVersion: v3
-  speakeasyVersion: 1.521.1
-  generationVersion: 2.558.5
-  releaseVersion: 0.1.0
-  configChecksum: ced1f77351976ac9d8b161d9f27f05f8
+  speakeasyVersion: 1.680.0
+  generationVersion: 2.788.4
+  releaseVersion: 0.2.0
+  configChecksum: 95b885ee3f9e75fcb007ab5d3a2ac0b7
   repoURL: https://github.com/speakeasy-api/hubspot-typescript.git
   installationURL: https://github.com/speakeasy-api/hubspot-typescript
   published: true
+persistentEdits:
+  generation_id: a3a51f6d-a8d9-42a2-beaf-b9024108b4b4
+  pristine_commit_hash: b10608e622adfd9cc655aeaf9337297c1a77783c
+  pristine_tree_hash: f3672bbee650b1df47c5c40a86ea6bef5437c08e
 features:
   typescript:
     acceptHeaders: 2.81.2
     additionalDependencies: 0.1.0
-    constsAndDefaults: 0.1.11
-    core: 3.21.4
+    constsAndDefaults: 0.1.12
+    core: 3.26.16
     defaultEnabledRetries: 0.1.0
-    devContainers: 2.90.0
+    devContainers: 2.90.1
     enumUnions: 0.1.0
     envVarSecurityUsage: 0.1.2
-    globalSecurity: 2.82.13
+    globalSecurity: 2.82.14
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
-    globalServerURLs: 2.82.4
-    mcpServer: 0.9.0
+    globalServerURLs: 2.83.0
+    mcpServer: 0.9.3
     nullables: 0.1.1
     responseFormat: 0.2.3
     retries: 2.83.0
-    sdkHooks: 0.2.0
+    sdkHooks: 0.4.0
+trackedFiles:
+  .devcontainer/README.md:
+    id: b170c0f184ac
+    last_write_checksum: sha1:4326a90538d0586a3dfc245257b629b378fa9dc0
+    pristine_git_object: de15de3ec6ca2f22edba7a6781e0fee45f6e0ae3
+  .devcontainer/devcontainer.json:
+    id: b34062a34eb1
+    last_write_checksum: sha1:d0b15193202c961e7d1875864ddb15f9d17c84dd
+    pristine_git_object: 4d560dd5f40afaf10d96eb75b1f02cd48bbd640c
+  .devcontainer/setup.sh:
+    id: 5f1dfbfeb8eb
+    last_write_checksum: sha1:a1dcd04057685307f04336c2143ee9c1786444d9
+    pristine_git_object: 46f2c5fbefe3e456c7b4a9838f2c9cd8a3134d31
+  .gitattributes:
+    id: 24139dae6567
+    last_write_checksum: sha1:26d16d8297b104945139da8c25bd38feeaad3e25
+    pristine_git_object: 113eead5093c17d43a46159132885318f281a68a
+  .npmignore:
+    id: aa70c1f807c3
+    last_write_checksum: sha1:3d5eb92f81539175db1ff0280e0aefbdd701f200
+    pristine_git_object: cf98a6bf092538eb10ff0edc915102682ce9a6e6
+  FUNCTIONS.md:
+    id: 21b9df02aaeb
+    last_write_checksum: sha1:3ecef852371531dda337351353baa62248b1fc3b
+    pristine_git_object: 7b0d8f7d8fd5c9c03047ab9e7bb6f158a79fd952
+  RUNTIMES.md:
+    id: 620c490847b6
+    last_write_checksum: sha1:e45b854f02c357cbcfdb8c3663000e8339e16505
+    pristine_git_object: 27731c3b5ace66bedc454ed5acbe15075aacd3dc
+  USAGE.md:
+    id: 3aed33ce6e6f
+    last_write_checksum: sha1:114c9b155dcd0446ead8c3705ce4349acbf770cb
+    pristine_git_object: 560705398bcbf4ff7d139e3a0a21935489e0f8b1
+  docs/lib/utils/retryconfig.md:
+    id: 0ce9707cb848
+    last_write_checksum: sha1:bc4454e196fcd219f5a78da690375a884f5ed07b
+    pristine_git_object: 08f95f4552349360b2c0b01802aa71ec3a55d2c2
+  docs/models/components/associatedid.md:
+    id: b98dc2738ad5
+    last_write_checksum: sha1:9603c0bdd1bc812ca18b0de9b8791493b859cdec
+    pristine_git_object: b44581da9977bb73fe9ae7fe5084a2274e9c8d98
+  docs/models/components/associationcategory.md:
+    id: c068bba4b93e
+    last_write_checksum: sha1:875756be9643111f607376923d8b2f9f8aa8eb24
+    pristine_git_object: 107df118b660ae3f0680f22fec23670d01659de8
+  docs/models/components/associationspec.md:
+    id: 2b16123d0b7e
+    last_write_checksum: sha1:3bb186e254810f1a8edb5e9a8d678ce2601eeecc
+    pristine_git_object: faf951e565be165cb1c1cf8b38f508a53adb1f59
+  docs/models/components/collectionresponseassociatedid.md:
+    id: de2b93131b7c
+    last_write_checksum: sha1:fef14e5f4a4432e25d393c496f47d13ef19ba4a7
+    pristine_git_object: 3f8b019508bbe2da7cfd54af7e8dd6d70ae4e098
+  docs/models/components/collectionresponsewithtotalsimplepublicobjectforwardpaging.md:
+    id: aae8b06c3930
+    last_write_checksum: sha1:2414e6c7838f23e9d3855a1d87cf83dbe82ddec2
+    pristine_git_object: b977c460ea293d7a9d9f6d04bc37140f97ff0a8e
+  docs/models/components/errordetail.md:
+    id: f26d3dd7951e
+    last_write_checksum: sha1:963ea644b524d30947a390c3bfde881018decf65
+    pristine_git_object: b510634b6702f2a54570c5da77bebf2b0dd44d56
+  docs/models/components/errort.md:
+    id: 9e3d3a44694f
+    last_write_checksum: sha1:375356e683dfdaf7b506b607174e1583cab657e6
+    pristine_git_object: c2a3243e4ca256ddff0e22819473dc0dedff8408
+  docs/models/components/filter.md:
+    id: 7effe8aedda6
+    last_write_checksum: sha1:ddf1adf7482e97fc42e8332b9f0fa376b73db31b
+    pristine_git_object: a2311f88f57883292eab85e78a99a340500e8e8a
+  docs/models/components/filtergroup.md:
+    id: 27f67bd7af53
+    last_write_checksum: sha1:44e24c9369eb488122d4fbcdaed56570f7a59c00
+    pristine_git_object: 92b98d963732af1449ebaf55c03f468a6b210837
+  docs/models/components/forwardpaging.md:
+    id: a8e21350ea03
+    last_write_checksum: sha1:cc64e336428d2b11fe3839f1382add9793eb73d9
+    pristine_git_object: 61fc6f5167bcfc4ed59564db06642eefb6addf7c
+  docs/models/components/nextpage.md:
+    id: ab4160b0c283
+    last_write_checksum: sha1:a08bb1dbf67728a278f35efe2a63a30a1964b205
+    pristine_git_object: 179f29b52c03ca0c870f7d9f023194fa848bc74e
+  docs/models/components/operator.md:
+    id: 53b616f52014
+    last_write_checksum: sha1:b570fb064f8d065de252de228682ee70018ed8a2
+    pristine_git_object: c661f05be762d4553eca4a123fea6bc0fd7eec48
+  docs/models/components/paging.md:
+    id: 8d55a64caa81
+    last_write_checksum: sha1:3e3bf1b601cacbaac868f35892813ccea7789254
+    pristine_git_object: e4135364d245d3932d17cae4c673c792663163b1
+  docs/models/components/previouspage.md:
+    id: 00f7fb33cac9
+    last_write_checksum: sha1:2c37b8f2a263d1f7f354b418d3443282525ff770
+    pristine_git_object: a5f5b45736d2fb5df19589e511cdabd5b06dd62c
+  docs/models/components/publicassociationsforobject.md:
+    id: fffa7b502b17
+    last_write_checksum: sha1:b17b292fb2e36fe87818cf8fbbc8843b0c324a93
+    pristine_git_object: 6e8861aeef9e481894107ca0bfce9d6f639dbcaa
+  docs/models/components/publicobjectid.md:
+    id: 5750bc11ddf9
+    last_write_checksum: sha1:d97b28098acc3f2cc30575d68336be69b88f3277
+    pristine_git_object: 7e7a8ec989507938aabed88a5714f9cdf8d9854d
+  docs/models/components/publicobjectsearchrequest.md:
+    id: 2173424d9e64
+    last_write_checksum: sha1:4285d74e825ca7a2d9f753b61af181138741193c
+    pristine_git_object: 74141a891547de4fe3db9f6e086eaa672f27f9eb
+  docs/models/components/security.md:
+    id: 54906b49ea28
+    last_write_checksum: sha1:4a8b49e1b5ed299430d6e3d89c2871fea07c359e
+    pristine_git_object: 630ffafb32e11da837771a3480f4821c4ad4ec91
+  docs/models/components/simplepublicobject.md:
+    id: 7997caa179b5
+    last_write_checksum: sha1:b41658105a43d0e358d904b531c67cc1a3019299
+    pristine_git_object: abd0c82996f3addedb97a086eec9bc5ca978c951
+  docs/models/components/simplepublicobjectinput.md:
+    id: 587589fdc82a
+    last_write_checksum: sha1:f49b716ba1c786f0abde9ea9a04d9e14b6ac3a95
+    pristine_git_object: 5812273c6c256e9262bebaa3b2c34a76a33ab633
+  docs/models/components/simplepublicobjectinputforcreate.md:
+    id: d26c8f241207
+    last_write_checksum: sha1:2e684dcd5c3aa88e9bbd50c910274351f93e17e8
+    pristine_git_object: 91b94b84505a371e755635b1741b91ba7d86c5af
+  docs/models/components/simplepublicobjectwithassociations.md:
+    id: 38bb1440f907
+    last_write_checksum: sha1:c031db85a17ec18919e8694a160b6fc33d8e3665
+    pristine_git_object: df787dea46d61f1b9658b7453c4e206425263c2d
+  docs/models/components/valuewithtimestamp.md:
+    id: 316553406b49
+    last_write_checksum: sha1:09ada9e75a0c284958884d489b76c69215d05934
+    pristine_git_object: e4af5999a7c893f8b4b135b42d45c55dde598012
+  docs/models/operations/createcontactresponse.md:
+    id: e01aca74c96e
+    last_write_checksum: sha1:4208abcd6286966359ada2fdd8fb5824c29d6941
+    pristine_git_object: c3dd578d03ed272c74d72c2d9ee8715a99c2560f
+  docs/models/operations/createdealresponse.md:
+    id: a82e4743bb78
+    last_write_checksum: sha1:a8b300fc81897d6902191b02a12f082d0db9f122
+    pristine_git_object: 50ab258a229d9eb44e8c343362af32e6d0c2922b
+  docs/models/operations/getcompanyrequest.md:
+    id: ebdeba1bae07
+    last_write_checksum: sha1:55b056ff3801fb7200109a60a7c1f84d6be1d9b3
+    pristine_git_object: 33d46b8117fe00e81caddf10dfbce4522248ce80
+  docs/models/operations/getcompanyresponse.md:
+    id: c16c12ce7ebf
+    last_write_checksum: sha1:eb97b4e5603691332433c09fb894da13de1d532a
+    pristine_git_object: 53ee8b3ff8987ec0d27f382b9e4bc94f43bbf5e2
+  docs/models/operations/getcontactrequest.md:
+    id: e5cee59a86f8
+    last_write_checksum: sha1:4581c72375207b9f0f232387accf596def3ee0a8
+    pristine_git_object: 568dab944d617c8966d0118e799c782e9843ddc7
+  docs/models/operations/getcontactresponse.md:
+    id: 13c8f32cbc63
+    last_write_checksum: sha1:cda836189f84fe02319ea32f09375253db74b403
+    pristine_git_object: 373ef5274df2eee4b22725ef204537ea1091e868
+  docs/models/operations/getdealrequest.md:
+    id: 7cf509afd315
+    last_write_checksum: sha1:1b3aa44f0e33e36456b979248a2b1cc15e8536c6
+    pristine_git_object: f05189784e3c81f9dd1c702d3a6017e80e8ae0de
+  docs/models/operations/getdealresponse.md:
+    id: 144449ccfca8
+    last_write_checksum: sha1:08b1f5c5d31534b485b723e48d0479d1b2c393a6
+    pristine_git_object: bf536471e31e06b8cae1cccb4107be930056ab42
+  docs/models/operations/getpropertiesrequest.md:
+    id: 78a1dbe1b6c7
+    last_write_checksum: sha1:72b4904a2c3d076f03a4be34808e12574a83a0a6
+    pristine_git_object: 0c5d37dbb5f56235a892384df4f5e28a6e916df7
+  docs/models/operations/getpropertiesresponse.md:
+    id: 7bb64ebbeb2b
+    last_write_checksum: sha1:674dd82f82081e4bbc0d424d3e1b63e800043c19
+    pristine_git_object: eaa9302a76dda845bb8988882ea84decfcc80ed8
+  docs/models/operations/objecttype.md:
+    id: 1515e9a61fc1
+    last_write_checksum: sha1:1f5a8fda0f95c4918c2a3112007d71d924b8a0dd
+    pristine_git_object: 436909d944d12b984c53d8e206031efd36427f72
+  docs/models/operations/searchcompaniesresponse.md:
+    id: d311576ef833
+    last_write_checksum: sha1:74a2f7eea4d17b61de2bb6a285432cb6f89522ee
+    pristine_git_object: f4b8a834e5cfd5e220f04d93bf6f4a27257aba23
+  docs/models/operations/searchcontactsresponse.md:
+    id: e78a540cf6ea
+    last_write_checksum: sha1:aceab20178bd1b3ac47d59fd78091fb7c6a995da
+    pristine_git_object: b1e5e5464765cf6fe04633a7930a3231eea682af
+  docs/models/operations/searchdealsresponse.md:
+    id: c2a6262fa51b
+    last_write_checksum: sha1:12ae3b951f5d51c006e6cc28d9dba88b62358202
+    pristine_git_object: e5cb79aa8166167c9bb47ca5561a26d2eac125fb
+  docs/models/operations/updatecompanyrequest.md:
+    id: 8d0c2e6362d6
+    last_write_checksum: sha1:d8bb7e670f02a451a65b23fcf1892aa3cbc03476
+    pristine_git_object: 28d94d469ff49c69cb022318d42feb4e8e7dde95
+  docs/models/operations/updatecompanyresponse.md:
+    id: 7a959a81c53b
+    last_write_checksum: sha1:1ae870c565d6b0007b41529b15d7c7bc5266c338
+    pristine_git_object: 95d47a988e09d7235b5a3c84469ed7611eeb4e2b
+  docs/models/operations/updatecontactrequest.md:
+    id: 9a767e2764d8
+    last_write_checksum: sha1:d0e76df2dc00425e83666a05f6817bbe3e60561c
+    pristine_git_object: e6ea0f607bbc578e458679b6f67480db5b93d2c2
+  docs/models/operations/updatecontactresponse.md:
+    id: 23adf17819d2
+    last_write_checksum: sha1:743256d8b7a3086d25ca8d10b18366f3cf017d6a
+    pristine_git_object: 4e54d415c3f9c3fa89c6d07314db551ac6877163
+  docs/models/operations/updatedealrequest.md:
+    id: 1617ab9f3177
+    last_write_checksum: sha1:edc8a20b635f2653c2a92710288687079708dfdc
+    pristine_git_object: 0b07839716c2e936e3375fad12cccb57c4447e37
+  docs/models/operations/updatedealresponse.md:
+    id: f84c06ccb973
+    last_write_checksum: sha1:afeed686ab625b89b3e56138a7e6daa27f205109
+    pristine_git_object: 27976201fe9c221fb9d9095937d0e64d194ec3d6
+  docs/sdks/basic/README.md:
+    id: c1bb93c656fa
+    last_write_checksum: sha1:d9e2f38cd69662ff398b2c23b68e564c94598754
+    pristine_git_object: 1aa9b7baf0949fc54611090c786829362cc20f9d
+  docs/sdks/search/README.md:
+    id: 5c534716244c
+    last_write_checksum: sha1:92b8fe7dcb4b4a3f635a125c29be721bffef429c
+    pristine_git_object: 3cca10da7927586f8656953233a178b6236b3aca
+  eslint.config.mjs:
+    id: 461c8d07f6da
+    last_write_checksum: sha1:9398f326377fe47f67af2df6eb6370750c0790b4
+    pristine_git_object: 67bccfec985be20a00970d90155752832dd47135
+  examples/.env.template:
+    id: 52cbe5afed92
+    last_write_checksum: sha1:bf5a691762c257c0433b3038d2d6feab9eacbcde
+    pristine_git_object: 71631081d7a526289fb80a033adb273123008f32
+  examples/README.md:
+    id: 9d0f69d6e677
+    last_write_checksum: sha1:794b7e122368f2f772b0692b71fc9e5b8e1b0dbd
+    pristine_git_object: 63975a9c7ea775e761fcdb60bd265b68bf852620
+  examples/basicGetProperties.example.ts:
+    id: 15a617705d71
+    last_write_checksum: sha1:d7d86afd96d3b737731f8cc3aad1519534d233a7
+    pristine_git_object: edfb7857445e2f4559d6e1aab6a9335b5b1ae888
+  examples/package.json:
+    id: c1d7b0ec8e7e
+    last_write_checksum: sha1:dd6005c6285228705b589031062e224c0c5b928e
+    pristine_git_object: 3b6486d761fe76befdb1c71b789c4ff6d1d175d8
+  jsr.json:
+    id: 7f6ab7767282
+    last_write_checksum: sha1:48cc89d257b026e4c263ec92011d11de346c2665
+    pristine_git_object: 65c224d30931492e4420c6554e9d64e9027b39b5
+  package.json:
+    id: 7030d0b2f71b
+    last_write_checksum: sha1:a322f5e2a491cada62762f7e9f24c92c1dca3132
+    pristine_git_object: fcdd8d1fcbb279238b0c7ea2cc7b5cb573ce5f05
+  src/core.ts:
+    id: f431fdbcd144
+    last_write_checksum: sha1:6717c314323cd52933555110b2851509959d6f0f
+    pristine_git_object: ec036caffd568b0cddf180c9d24cd019bebeed63
+  src/funcs/basicCreateContact.ts:
+    id: ad38387a6989
+    last_write_checksum: sha1:a3d0ee652fb6936260b557fd2ce47c4f06b7a4ae
+    pristine_git_object: 5dc72ee736120d8662ea8c80ce51f7029d403a86
+  src/funcs/basicCreateDeal.ts:
+    id: b2055394c473
+    last_write_checksum: sha1:e2a95eca0715f570f07ec54740eaa6131296960f
+    pristine_git_object: 46edb3f3ce66da5771fe2940282ac4a88af5ffd4
+  src/funcs/basicGetCompany.ts:
+    id: ca9bb8fd8957
+    last_write_checksum: sha1:c2fcc8a554639c4efd29b22ecc788eadf76baa62
+    pristine_git_object: 54ea76ba24f9856cbaf9ebe3f536c33b40ed3601
+  src/funcs/basicGetContact.ts:
+    id: b4dafccca55a
+    last_write_checksum: sha1:e0a487961c70dff52f215609f25230250bbdb69b
+    pristine_git_object: af70ad4cbd1e319d2126831026d62a58aec199bb
+  src/funcs/basicGetDeal.ts:
+    id: 6b9cae6cfe13
+    last_write_checksum: sha1:a5e0e47924108916336baeee5b935c5e3c67ee0d
+    pristine_git_object: 5f00ade6f0bfb788eac7a4702c966abf5f5eab6f
+  src/funcs/basicGetProperties.ts:
+    id: 534acd2416ef
+    last_write_checksum: sha1:b4f218474660ea72b054b664e86c9d6bd1298994
+    pristine_git_object: e3b373303bc93e23df74e16e230829116ad5ac7d
+  src/funcs/basicUpdateCompany.ts:
+    id: fc59964913e4
+    last_write_checksum: sha1:24269bfd707104f0b6f3029279b8a092bc4be1bb
+    pristine_git_object: 7b7623e0cfe9e438e1cd942b6653beb50033a2bc
+  src/funcs/basicUpdateContact.ts:
+    id: a68ec2ce0f3b
+    last_write_checksum: sha1:adbd517f62a526c3b6922db30075975a35dc9136
+    pristine_git_object: ed008cbbb86563d8bb48e8e151b9e558785c5bb1
+  src/funcs/basicUpdateDeal.ts:
+    id: 8b479f9a90c0
+    last_write_checksum: sha1:1e4de5e5d33b0a7d42e685c9248de6e39eb90c2e
+    pristine_git_object: 8a8ffb17a7e3ede53fd28f28c2a7ce92879ccf40
+  src/funcs/searchSearchCompanies.ts:
+    id: 561bdbeb2706
+    last_write_checksum: sha1:facfd0ded5cc0bfa556b0060b5adcef7296db9cc
+    pristine_git_object: 583c5b8e7d9d8eae94ff7f6e8d0df140a9445ea4
+  src/funcs/searchSearchContacts.ts:
+    id: 839a98fdf852
+    last_write_checksum: sha1:e765cfddf98f0cb439f2ae571126bfb4ff5b5c61
+    pristine_git_object: eeea111b799d9cd692145437f27fb842b5fa889f
+  src/funcs/searchSearchDeals.ts:
+    id: 1d74dcfe117f
+    last_write_checksum: sha1:da4ab9e5cf2b91eb1678e23e873bd17388f8c5b7
+    pristine_git_object: 7f914825901709c7b206872aff6f5f331a51b702
+  src/hooks/hooks.ts:
+    id: a2463fc6f69b
+    last_write_checksum: sha1:9a569ea8f3177ddcdfe6cd903feaf5c2d2c36a9a
+    pristine_git_object: d34c88497fb1cfb22a725e52b4c218f36d0b5c8e
+  src/hooks/index.ts:
+    id: 5f2dab62b520
+    last_write_checksum: sha1:1a11c073a6cd792932218e1d4ed36b8567bad8ef
+    pristine_git_object: f60ec7acd76141a71d78008c5a362eb0236d8335
+  src/hooks/types.ts:
+    id: 2a02d86ec24f
+    last_write_checksum: sha1:29372122898cc523fa47576f3f6608a28ec6080e
+    pristine_git_object: 8bfe4fe8137138decea7af0a5ed791bf01201789
+  src/index.ts:
+    id: c5fb850250c7
+    last_write_checksum: sha1:35c9cde3ae14b18b3f893a1afe8b6c44f8760f24
+    pristine_git_object: dbcba164a0082e3bb8c43cf21fa7f8ffb9d35dfc
+  src/lib/base64.ts:
+    id: "598522066688"
+    last_write_checksum: sha1:b0b12ddbd8625efb47c0e955a18641aeb10c6532
+    pristine_git_object: 0aebd8b0a4867e35cb3348fc52921c3c0b4725b7
+  src/lib/config.ts:
+    id: 320761608fb3
+    last_write_checksum: sha1:d3da428f15000c5b610da982064b0342365737c0
+    pristine_git_object: 5c519df9934505f19b8dc69b1fc057e7196181ca
+  src/lib/dlv.ts:
+    id: b1988214835a
+    last_write_checksum: sha1:1dd3e3fbb4550c4bf31f5ef997faff355d6f3250
+    pristine_git_object: e81091f5e536f82739f71379b1fddc2d147c49e2
+  src/lib/encodings.ts:
+    id: 3bd8ead98afd
+    last_write_checksum: sha1:d20c131976ab8ac68b22bdde2b7ed84b5b873922
+    pristine_git_object: 31cd3733907afbee3641b9ab680ed417247a7d33
+  src/lib/env.ts:
+    id: c52972a3b198
+    last_write_checksum: sha1:b4a2c77028b47f434372bdb3e974cd039218a837
+    pristine_git_object: 79cb530e1218dd2643da36a7f1784b81b784f893
+  src/lib/files.ts:
+    id: e5efa54fcb95
+    last_write_checksum: sha1:d0f325f445b8d22e7d73baf052c585ec2dd24841
+    pristine_git_object: 0344cd046d033f9e8a55de02f7935c5cec5dc30b
+  src/lib/http.ts:
+    id: 63a80782d37e
+    last_write_checksum: sha1:797cbf16d3c7c4d62d3ba0eedb08617524938457
+    pristine_git_object: 13cf1fd7894a89f727b8d2db2ad24313a94f68c7
+  src/lib/is-plain-object.ts:
+    id: b9862591096a
+    last_write_checksum: sha1:df687f25a9590b6fd95d39df41a652ae3fd4e517
+    pristine_git_object: 61070d3d7c7e5e95b1ed7e7ea21869eb0767db77
+  src/lib/logger.ts:
+    id: 7ee7741a02bf
+    last_write_checksum: sha1:0ec9d3a2a34c362746b767e4f9a746c055d57a7b
+    pristine_git_object: d181f2937d4128afbe9b0327e0f81d1fa9c877b7
+  src/lib/matchers.ts:
+    id: d54b2253b719
+    last_write_checksum: sha1:e7587f40d36710d499f8a7e6b610610e55a2cb40
+    pristine_git_object: 77d41086d77e53263a3a9ba0ec73aea3df521096
+  src/lib/primitives.ts:
+    id: 74859f750b28
+    last_write_checksum: sha1:987869fc54790b9c22e9182099103d6aa7c67016
+    pristine_git_object: d21f1dc49affa4e6d324bdd60811b470fdfa7eb6
+  src/lib/retries.ts:
+    id: b24a69d15639
+    last_write_checksum: sha1:f3da74dffcbe2756c69393f8600205aa1dc06e68
+    pristine_git_object: e3ce9aba72150fc3c18f3105d39b21aba809377b
+  src/lib/schemas.ts:
+    id: deb4b531fae1
+    last_write_checksum: sha1:209cfaabfa7fc1c1310f97453215cb0755619c6e
+    pristine_git_object: 47edb9725c2482c667e2ddc8a56b1fec4285c492
+  src/lib/sdks.ts:
+    id: 8a6d91f1218d
+    last_write_checksum: sha1:961e2c6a1dca980bfc3e25295966aa1b1104aa28
+    pristine_git_object: 03b9ce0f953d6d6cd3f69208257b08a78de21f51
+  src/lib/security.ts:
+    id: 0502afa7922e
+    last_write_checksum: sha1:6dbd1f1eb3fbc34f74b7aba0ee7ae1dbe6a8c54d
+    pristine_git_object: 3114bef4d14f5915bb39253de29e439785476b65
+  src/lib/url.ts:
+    id: b0057e24ed76
+    last_write_checksum: sha1:d124050c7e755c0cce233b9e029afb584ff65201
+    pristine_git_object: f3a8de6c021de59c991707946cd294596cae954d
+  src/mcp-server/build.mts:
+    id: f7a2ed2de4d7
+    last_write_checksum: sha1:1a7a5dc9ace5a5d707bd8d2339f76719e525e7eb
+    pristine_git_object: a04739f2ac2154c097ea821daf364ee4c037a820
+  src/mcp-server/cli.ts:
+    id: 4ade0ef98b00
+    last_write_checksum: sha1:7331efddde881832342fa8779d23be7445d4480c
+    pristine_git_object: b878d8de9f2a0275c3cdbfdcaed48a31092e558a
+  src/mcp-server/cli/start/command.ts:
+    id: b3e53408ccb4
+    last_write_checksum: sha1:12de6fb242af59092e3e0e33e8efd4585e5a5697
+    pristine_git_object: 02edbd6b12d4ab1ba94b781e617c775dc8e33c66
+  src/mcp-server/cli/start/impl.ts:
+    id: 37494f674015
+    last_write_checksum: sha1:fb339477f648004147eb83b19cabc45d9ee5c043
+    pristine_git_object: 593f8f74f2357a6547d26885567bbfdf85f21a6d
+  src/mcp-server/console-logger.ts:
+    id: 57aff4ff2e15
+    last_write_checksum: sha1:66e945860c8318f2a6bb9604a7720a979dacce4b
+    pristine_git_object: d65a295b9545bee0599e46f2a75f2ab5a03c4ae4
+  src/mcp-server/extensions.ts:
+    id: 3d9d20ff158f
+    last_write_checksum: sha1:e36e4b49b77347db80debccc2e77706b0ac7f4a4
+    pristine_git_object: 0955a573c2ce989d63c737410ab8cc28706d9f74
+  src/mcp-server/mcp-server.ts:
+    id: aabbc4ab07c1
+    last_write_checksum: sha1:5df46e50d7766e2eac355c72a964310880e0af2b
+    pristine_git_object: d643b83832982a62609ddb99ef4cece94f7d83bf
+  src/mcp-server/prompts.ts:
+    id: 26f3d73cbf31
+    last_write_checksum: sha1:94c3930b1cbaaba38a5218c1a9c698d0b09e9bc1
+    pristine_git_object: daca64591b2aa5a315616358eebf8296ed65b9b2
+  src/mcp-server/resources.ts:
+    id: cb0c57ebeaea
+    last_write_checksum: sha1:b1eccb06886a84f17b981f1d25d764c40da72a0c
+    pristine_git_object: c433843ae61b547fb3e536ca8710de30ff4d2e3f
+  src/mcp-server/scopes.ts:
+    id: 8966d24256b2
+    last_write_checksum: sha1:c3049445638436e8b00ec1b95753a5f26b538184
+    pristine_git_object: cb8330e4ae705d283de6ab337eefd3b4b8191fca
+  src/mcp-server/server.ts:
+    id: 2784dd48e82a
+    last_write_checksum: sha1:8fc8a9820d841d0e9225e1136aa23fecbccb62f7
+    pristine_git_object: e7fa68e55a4fc215f259a2cf9719b8d0694527a4
+  src/mcp-server/shared.ts:
+    id: 074e80d4be1e
+    last_write_checksum: sha1:56c73d4429691516e35541825e759a0285747a2b
+    pristine_git_object: 3e94144d13f0707bc300183ebb4325b367c297dd
+  src/mcp-server/tools.ts:
+    id: 654d5d1f2062
+    last_write_checksum: sha1:d281dfea92cf62cd4cdf1dfa7bbd82786c20d481
+    pristine_git_object: 23e69e03f73d23d8fb58a3559215d7a80e3afcf8
+  src/mcp-server/tools/basicCreateContact.ts:
+    id: bdc2f28823c1
+    last_write_checksum: sha1:e9b1ef55110f46e80e1696a2b380276293eae87b
+    pristine_git_object: 189eaa50b7daefa7eefb966445577d5d9c245fa4
+  src/mcp-server/tools/basicCreateDeal.ts:
+    id: 9292f44b91dd
+    last_write_checksum: sha1:0b5be40a03e4cf4585fba9730c6eef3df8a06bd2
+    pristine_git_object: 1c219824b4cdcd1f1d759fad9f2f7a6d145295c3
+  src/mcp-server/tools/basicGetCompany.ts:
+    id: d8e8044b0de9
+    last_write_checksum: sha1:13e77bd6960f09ffdfe1c8754101a59d84e3e903
+    pristine_git_object: e726ffa9c4f6dbf66c40db954da4870ae37ed191
+  src/mcp-server/tools/basicGetContact.ts:
+    id: 37bca9ff0acf
+    last_write_checksum: sha1:4c8bf86937340aec850321c0c61fd9264339dcf3
+    pristine_git_object: 310b864902cf1ee05cc1c54c64c501fa19479daf
+  src/mcp-server/tools/basicGetDeal.ts:
+    id: 079420e7c630
+    last_write_checksum: sha1:2701bccd95f3200bff2e77ec8c44f9e6cf8610f5
+    pristine_git_object: 4fac9dd7d9ecc16c91fd16b9a21c09622e7385b7
+  src/mcp-server/tools/basicGetProperties.ts:
+    id: adbfd8abf61a
+    last_write_checksum: sha1:d6acc2ca751a8c927a930e705c0fa632be59d67e
+    pristine_git_object: e2345cf14ab66d0cb6ec0824722dd16556939b82
+  src/mcp-server/tools/basicUpdateCompany.ts:
+    id: d0e1c2ac80da
+    last_write_checksum: sha1:3337ade14c0ff5c068b7e4fe56f8eeef81da66c4
+    pristine_git_object: b5328f4636b7469d70e21d31bc58bd80057d8176
+  src/mcp-server/tools/basicUpdateContact.ts:
+    id: ed9389d09ff0
+    last_write_checksum: sha1:13e6d7910981e428cfe118df554c62fe0ed76ca7
+    pristine_git_object: 90e2f92a55c8d2452bea2fe1fbfd0fd40f580f05
+  src/mcp-server/tools/basicUpdateDeal.ts:
+    id: 933497be7a5c
+    last_write_checksum: sha1:b3b1fc9723472dd06ccbe1063e47c62727970247
+    pristine_git_object: fb5f32215cd5b6f5ef08a586e75988ed731ff2bb
+  src/mcp-server/tools/searchSearchCompanies.ts:
+    id: c1e54adf9e50
+    last_write_checksum: sha1:3e15d8cee1557f054cf4be46ff49e6578ed0b33b
+    pristine_git_object: 4b01b8079c86e29c74593ee52bafc69e1ed1d0ae
+  src/mcp-server/tools/searchSearchContacts.ts:
+    id: 7e875156da8b
+    last_write_checksum: sha1:713e703f91d33854ec468028048d903e39e1ffc9
+    pristine_git_object: 4492aed126424572016fd9b40a21763a1f29821e
+  src/mcp-server/tools/searchSearchDeals.ts:
+    id: ba43f61dc420
+    last_write_checksum: sha1:78318284c5b664e1f8ef2837985aa13b9c1b771d
+    pristine_git_object: ba6998183ea4bb277ba9dacf3ea411d226962fb5
+  src/models/components/associatedid.ts:
+    id: 657fbf1fae7c
+    last_write_checksum: sha1:09f4de9014ce425af58a88433a5fd24d1f12da7a
+    pristine_git_object: 7e8650627405585d3906ae62eb2ff93d6768659e
+  src/models/components/associationspec.ts:
+    id: 4fdfae84bc03
+    last_write_checksum: sha1:274167ab83fa07fe8e8d2e4a596ee4e3ff831555
+    pristine_git_object: 3df4316dd4c45cbfc21b8185f53cd1a864dc1e54
+  src/models/components/collectionresponseassociatedid.ts:
+    id: 49bbff00be75
+    last_write_checksum: sha1:50c66dc03d1f7854c08d3b98371f64dc738a8011
+    pristine_git_object: 095b151fd7c4bbe54a907e33a279d559c66712e2
+  src/models/components/collectionresponsewithtotalsimplepublicobjectforwardpaging.ts:
+    id: b80796460f87
+    last_write_checksum: sha1:07a5ae0271d149699d3a4da44420284dbbcdf540
+    pristine_git_object: 9d873beae15476a858c805401c60402ed2241f5b
+  src/models/components/error.ts:
+    id: 24d23dde5558
+    last_write_checksum: sha1:b28a42a104fa6e83a109ae517f62eac8d754ffc6
+    pristine_git_object: b201a84ba37a001f7e934d21b5d62fd528f6274a
+  src/models/components/errordetail.ts:
+    id: d2bb39b6f332
+    last_write_checksum: sha1:6424af1ebc6b81cf20a4797dd1f432e3c358146a
+    pristine_git_object: 06e91a9fc28902792cf6cdff71d369d9fbac9ce7
+  src/models/components/filter.ts:
+    id: 7824d6e24147
+    last_write_checksum: sha1:3b8c64a7d8e2fe2fffc1aaecd7e77c69f7007604
+    pristine_git_object: eb831683d873d736da33f7f44c935d2406917db6
+  src/models/components/filtergroup.ts:
+    id: 7fdaeed4d2bf
+    last_write_checksum: sha1:e86f596676f214486d369c8ea11b5b61ed005424
+    pristine_git_object: 9194098dfa92abdd8ce68b0e4246089e8bde93ee
+  src/models/components/forwardpaging.ts:
+    id: bb4dfe7b7f42
+    last_write_checksum: sha1:08619be7a90d895d60756d1a04cff4bed7ef8e5f
+    pristine_git_object: e3b56f3dbb389bffa3a0d17e4053e57d263476ed
+  src/models/components/index.ts:
+    id: 0aa842dce54d
+    last_write_checksum: sha1:514426c86cde971c2a895ec54744973edbc15ac4
+    pristine_git_object: 8c5e08658dbe7b7c2fcf621fb8f14a85764a721d
+  src/models/components/nextpage.ts:
+    id: 40682c52a1cc
+    last_write_checksum: sha1:144f956058edacbaa7cc7d2242d7bfbb45212090
+    pristine_git_object: 544fcdfd4824a6b276b4b93f00f3111bf4645531
+  src/models/components/paging.ts:
+    id: ffc93606e0cb
+    last_write_checksum: sha1:f93c36194546c7378c9e1a625466cd5fe1f04a3e
+    pristine_git_object: 3d4a299f2e7cb5b5a379e1578ed7010f1ee461c3
+  src/models/components/previouspage.ts:
+    id: 0d6399f193a9
+    last_write_checksum: sha1:9336887e7dac600b61c6d41808d542609d652b99
+    pristine_git_object: fb4f1b32ae6518d419042332a177b3155c5bfd53
+  src/models/components/publicassociationsforobject.ts:
+    id: 57646e426dd3
+    last_write_checksum: sha1:9a598589f9a01952c7093665650ae4fa881c22be
+    pristine_git_object: 519e57ade332a99f3a8d1658ed3f019d5a984f41
+  src/models/components/publicobjectid.ts:
+    id: ac8588cc990b
+    last_write_checksum: sha1:89a6b6e70a7be662987b4ae4cd2d978a2d72a52d
+    pristine_git_object: 04c0bacd2cbf0c6ead88db45a1bb4aab36b5272d
+  src/models/components/publicobjectsearchrequest.ts:
+    id: bc050897cf75
+    last_write_checksum: sha1:fe096ccdf7f45c84dca54308d4a20ba515f202be
+    pristine_git_object: 3fe677fe02d48536c8ae82c0a97b581fe525a517
+  src/models/components/security.ts:
+    id: 472dde81bb1c
+    last_write_checksum: sha1:8825af23857924d221f01739cd8dc95fc3c52b0c
+    pristine_git_object: 6efb20a2ceb84a76f60722a394017c68d0a46754
+  src/models/components/simplepublicobject.ts:
+    id: "469846130014"
+    last_write_checksum: sha1:a587bd5c7250703ecd4b6a8a6500c771f947c547
+    pristine_git_object: bc52edce2ddd3cc06986c5c9ac0ac93bfc2b931f
+  src/models/components/simplepublicobjectinput.ts:
+    id: 0ea5a5a1079f
+    last_write_checksum: sha1:87e538b09ef2b53fd661a21412bc4d7179bfd837
+    pristine_git_object: f9f43709c1202c409563e9d16c95d11a757e4db8
+  src/models/components/simplepublicobjectinputforcreate.ts:
+    id: 9b38f5994244
+    last_write_checksum: sha1:48608940b774013072255005260f3c2ba01a233f
+    pristine_git_object: 57df5be6e5d897dff07492e10945da91b9ac8501
+  src/models/components/simplepublicobjectwithassociations.ts:
+    id: a8a89da612e6
+    last_write_checksum: sha1:8960c7fd8330495458aebbd3469d278af6caa877
+    pristine_git_object: ec38507fb6e092800c06333248057db8012e1c0f
+  src/models/components/valuewithtimestamp.ts:
+    id: fe66c5070f56
+    last_write_checksum: sha1:7fec1a4fa7e869fa04db6c9fbf49d6dc6062d949
+    pristine_git_object: a9d3f948d8d6d1f4210f11081af387f030c75033
+  src/models/errors/apierror.ts:
+    id: e2280e075454
+    last_write_checksum: sha1:7f570d40b4f8695593ac707d4dc4097160142487
+    pristine_git_object: 1f4684c1e2ad51d0f4804e3afb5fbb567fc3f2a3
+  src/models/errors/httpclienterrors.ts:
+    id: 6948de76af99
+    last_write_checksum: sha1:994ced121c54fecd0af038ccfb7855fbfd3868ec
+    pristine_git_object: b34f612124c797c2a1106b9735708f679a90b74f
+  src/models/errors/hubspoterror.ts:
+    id: b09b315e8371
+    last_write_checksum: sha1:bb6abdc64d629cddd1fa102b23ce4be14ace5a90
+    pristine_git_object: 93eb3b35f43564a418536dc2220580c96e724cd2
+  src/models/errors/index.ts:
+    id: c4e22507cb83
+    last_write_checksum: sha1:9d83bb1747d6ae9928c88fdc0e23a14d0cf35f46
+    pristine_git_object: aa4506e7e4284c4ebf7f69492616a9d305098d62
+  src/models/errors/responsevalidationerror.ts:
+    id: 88ff98a41be9
+    last_write_checksum: sha1:ec5c54ec652982ce67b34fc542e6bbe1d9e3b5c6
+    pristine_git_object: b60d227192e5efae8e76f997a3a5eba0debd926b
+  src/models/errors/sdkvalidationerror.ts:
+    id: fb6b2b49c445
+    last_write_checksum: sha1:a69da17627bcc32b820544608f3400423ea53f26
+    pristine_git_object: 6826e1208a5d7b7d310535d18909646522bf0fbd
+  src/models/operations/createcontact.ts:
+    id: cbfbc9f08a35
+    last_write_checksum: sha1:2ad8ef5cee22e6673e23878530fdd655839a595d
+    pristine_git_object: ce5c2777c6450a3fdf41a4be46f74b9c53be138c
+  src/models/operations/createdeal.ts:
+    id: 85592453f06d
+    last_write_checksum: sha1:91fc7b7ea1f9e0686efa00c4f195a326a1e565d7
+    pristine_git_object: 2f4a328620eac7ecf30d58581dac1987c1255482
+  src/models/operations/getcompany.ts:
+    id: 75420ed8a75f
+    last_write_checksum: sha1:9a54461a9b9fd8c45d9edf96e727d724bf81f6b1
+    pristine_git_object: 930b0211a8b9c70d8a2a5893b5306169eab64543
+  src/models/operations/getcontact.ts:
+    id: 7a9b8d4c8bda
+    last_write_checksum: sha1:b9c918b1cb88e089da8b208fc54118a54b9d27a2
+    pristine_git_object: c710d0d43292f4caec71b16f6d699cbd65e2f0a8
+  src/models/operations/getdeal.ts:
+    id: 84c67340e0c5
+    last_write_checksum: sha1:63a26df60868242e9601b458ee2e0863fd1a9c87
+    pristine_git_object: fc35a12f169dfa44b3db828bd64dd9fe8ffabbc1
+  src/models/operations/getproperties.ts:
+    id: 596d43075d7c
+    last_write_checksum: sha1:ebddb0a4af4134c29769b31ce0bfdb1c150bf71a
+    pristine_git_object: 9f755ae0e79e8a68c7f65a26eabf6fe9ee79a6bd
+  src/models/operations/index.ts:
+    id: 0d9ffaf774d2
+    last_write_checksum: sha1:a72e61ea7694a812d7b121a6ab3b44fc1ff25459
+    pristine_git_object: 5339de4a54b76935272bf00476ab34898d21475c
+  src/models/operations/searchcompanies.ts:
+    id: e18d235284ef
+    last_write_checksum: sha1:bc332f4adf04ad85b112de09eb42542caf26a2c5
+    pristine_git_object: f2d2cc5a50aa90095534a55dee9a24c51d724e32
+  src/models/operations/searchcontacts.ts:
+    id: 2df20a31ed1f
+    last_write_checksum: sha1:7e9af54abdac33ae5ab24ea6e54354513f0f4170
+    pristine_git_object: 1b33ca9ad274785388ae57721773125c458c8b86
+  src/models/operations/searchdeals.ts:
+    id: 4113bb566fbc
+    last_write_checksum: sha1:5371d54c59e54fed094fab782e05aa30eb216988
+    pristine_git_object: 5a11b2e10869b9356dc942617da23af57a49631e
+  src/models/operations/updatecompany.ts:
+    id: 1823f98e34a4
+    last_write_checksum: sha1:43c377e3bf3f6f0626442de9a31ae683e63e56e0
+    pristine_git_object: 8db66f4b9d9777c0876031b6dac279dc0936de2c
+  src/models/operations/updatecontact.ts:
+    id: 67455498bb23
+    last_write_checksum: sha1:40a97e45c2bf50c26d88292191dbe688c575c090
+    pristine_git_object: e7def5d4cf28b071787b4e8ae52d1a68190710a8
+  src/models/operations/updatedeal.ts:
+    id: 7bd61ea4c9cf
+    last_write_checksum: sha1:431bf9a78d89ac45f1cda90d445e58184058752a
+    pristine_git_object: 0a67bd51a84f65f54fdd50ac8d6d87709b860bca
+  src/sdk/basic.ts:
+    id: b028051dd97c
+    last_write_checksum: sha1:cdc91dd0eeeeb6695bea4eaf82e238f01ad39f77
+    pristine_git_object: e95161abf184a449b7d88181aa6c4081353b4746
+  src/sdk/index.ts:
+    id: a857902a703f
+    last_write_checksum: sha1:ed6d64f2a6135349aa8498b8d8cff9ba85c7fb8f
+    pristine_git_object: ecac2264817bb369ff2dbf0f0e9029807e67ff77
+  src/sdk/sdk.ts:
+    id: 784571af2f69
+    last_write_checksum: sha1:9efca28d009cd325c43d2775166f33999d5bfa35
+    pristine_git_object: a0fffddfc5925a5225b9eefbcd781f5e2e9ecb7b
+  src/sdk/search.ts:
+    id: b88871d87236
+    last_write_checksum: sha1:3f1f327958747d20d41755d575f9fb36e5c05655
+    pristine_git_object: 63cc862d46ac726d72bc9562472ab0b73d723779
+  src/types/async.ts:
+    id: fac8da972f86
+    last_write_checksum: sha1:3ff07b3feaf390ec1aeb18ff938e139c6c4a9585
+    pristine_git_object: 689dba5de50e8769e5f3bb913e3f42a146d15bc1
+  src/types/blobs.ts:
+    id: f8ab9b326c86
+    last_write_checksum: sha1:cf45d78916671cb6345a11c97c633c64402bc27c
+    pristine_git_object: cce2892d4f573a120ef3907db90ab15f5979cfda
+  src/types/constdatetime.ts:
+    id: 0f7b6f513917
+    last_write_checksum: sha1:dfaaf9adfaf49808bd4c9dea0039f21b7088d9c0
+    pristine_git_object: fe62144eaf6a2054fc8ca9a98466e70f41b5434d
+  src/types/enums.ts:
+    id: 4d03ddfe5100
+    last_write_checksum: sha1:ee590453d2c87e33e89c633d37ee46907eca0e58
+    pristine_git_object: aba0ffd2a3308a31e516d83b52823d80aa65a8f9
+  src/types/fp.ts:
+    id: ae9f0fb8aab6
+    last_write_checksum: sha1:d24994d58f37a1ca106847fcc6d2e976c6f1c093
+    pristine_git_object: ccbe51eac69dfb0da5131f14fd753c4b47c1d527
+  src/types/index.ts:
+    id: cd7a0a5ed005
+    last_write_checksum: sha1:bf43b3dccb960ca9ae9c5ab940da4786255881cd
+    pristine_git_object: abf0b7ab8f196829df8946da40d627a46da68e3c
+  src/types/operations.ts:
+    id: 314da01dca47
+    last_write_checksum: sha1:c49e724cfb1259296381cb57bc0fcdd2eae45865
+    pristine_git_object: beb81e10f0b9eee2ed398a853fe6f737b743f818
+  src/types/rfcdate.ts:
+    id: 9eb64906dcd6
+    last_write_checksum: sha1:8e5f382e02fe21c2f2e24deb1b7bbf8cddd3dd16
+    pristine_git_object: c79b3f53a3dd922aa2ace5a4191c8652cf9a8e89
+  src/types/streams.ts:
+    id: f99be9c4bf14
+    last_write_checksum: sha1:cc9ced2dd34a76c3a1bd7784ccda1cc3b37ab9a9
+    pristine_git_object: a0163e7a99cea88f21d0ad4ce3af1c720180ee20
+  src/types/unrecognized.ts:
+    id: 476605c40716
+    last_write_checksum: sha1:d33ac686528492f4cdc0dbf81ed343b4afe020fe
+    pristine_git_object: b7a2a13f3dff50663429df24ae2f55b647ff1084
+  tsconfig.json:
+    id: 61ebb9fd6e8c
+    last_write_checksum: sha1:c3ec7996536cdb9a54319e7d1eb3b199b733d34c
+    pristine_git_object: 0ccdbe286a8780e06a469a9eb7e2fb95322fd507
+examples:
+  getProperties:
+    speakeasy-default-get-properties:
+      parameters:
+        path:
+          objectType: "contacts"
+      responses:
+        "200":
+          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
+        default:
+          '*/*': "0x6AebEB6dfa"
+  getCompany:
+    speakeasy-default-get-company:
+      parameters:
+        path:
+          companyId: "<id>"
+        query:
+          archived: false
+      responses:
+        "200":
+          application/json: {"createdAt": "2025-08-25T15:16:09.699Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2025-05-22T12:21:57.653Z"}
+        default:
+          '*/*': "0x095Bfee7E8"
+  updateCompany:
+    speakeasy-default-update-company:
+      parameters:
+        path:
+          companyId: "<id>"
+      requestBody:
+        application/json: {"properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
+      responses:
+        "200":
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+        default:
+          '*/*': "0xdceFCcA8Bb"
+  getContact:
+    speakeasy-default-get-contact:
+      parameters:
+        path:
+          contactId: "<id>"
+        query:
+          archived: false
+      responses:
+        "200":
+          application/json: {"createdAt": "2024-04-26T22:09:40.861Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2024-05-07T19:22:28.190Z"}
+        default:
+          '*/*': "0x8ef9DAF6B0"
+  updateContact:
+    speakeasy-default-update-contact:
+      parameters:
+        path:
+          contactId: "<id>"
+      requestBody:
+        application/json: {"properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
+      responses:
+        "200":
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+        default:
+          '*/*': "0xded1d6FB0E"
+  createContact:
+    speakeasy-default-create-contact:
+      requestBody:
+        application/json: {"associations": [{"types": [{"associationCategory": "HUBSPOT_DEFINED", "associationTypeId": 2}], "to": {"id": "101"}}], "properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
+      responses:
+        "201":
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+        default:
+          '*/*': "0x699Faed7d0"
+  getDeal:
+    speakeasy-default-get-deal:
+      parameters:
+        path:
+          dealId: "<id>"
+        query:
+          archived: false
+      responses:
+        "200":
+          application/json: {"createdAt": "2023-09-13T04:14:42.703Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2024-11-30T01:20:41.885Z"}
+        default:
+          '*/*': "0x23d01cBbaF"
+  updateDeal:
+    speakeasy-default-update-deal:
+      parameters:
+        path:
+          dealId: "<id>"
+      requestBody:
+        application/json: {"properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
+      responses:
+        "200":
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+        default:
+          '*/*': "0xa54Ebb05D3"
+  createDeal:
+    speakeasy-default-create-deal:
+      requestBody:
+        application/json: {"associations": [{"types": [{"associationCategory": "HUBSPOT_DEFINED", "associationTypeId": 2}], "to": {"id": "101"}}], "properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
+      responses:
+        "201":
+          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
+        default:
+          '*/*': "0xCB53a70BeA"
+  searchCompanies:
+    speakeasy-default-search-companies:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"total": 243268, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
+        default:
+          '*/*': "0x7194B2Fbdc"
+  searchContacts:
+    speakeasy-default-search-contacts:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"total": 473738, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
+        default:
+          '*/*': "0xD472AaCEA0"
+  searchDeals:
+    speakeasy-default-search-deals:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"total": 99162, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
+        default:
+          '*/*': "0x1bbfBe91ad"
+examplesVersion: 1.0.2
+generatedTests: {}
 generatedFiles:
   - .devcontainer/README.md
   - .devcontainer/devcontainer.json
@@ -199,135 +1034,3 @@ generatedFiles:
   - src/types/rfcdate.ts
   - src/types/streams.ts
   - tsconfig.json
-examples:
-  getProperties:
-    speakeasy-default-get-properties:
-      parameters:
-        path:
-          objectType: "deals"
-      responses:
-        "200":
-          application/json: {"key": "<value>", "key1": "<value>", "key2": "<value>"}
-        default:
-          '*/*': "0xDC1CcbAA6F"
-  getCompany:
-    speakeasy-default-get-company:
-      parameters:
-        path:
-          companyId: "<id>"
-        query:
-          archived: false
-      responses:
-        "200":
-          application/json: {"associations": {"key": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": []}}, "createdAt": "2025-10-24T12:05:59.595Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2023-04-22T05:13:50.650Z"}
-        default:
-          '*/*': "0xBCBF4Fa1AB"
-  updateCompany:
-    speakeasy-default-update-company:
-      parameters:
-        path:
-          companyId: "<id>"
-        query: {}
-      requestBody:
-        application/json: {"properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}}
-      responses:
-        "200":
-          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
-        default:
-          '*/*': "0xb3E6c6BfBC"
-  getContact:
-    speakeasy-default-get-contact:
-      parameters:
-        path:
-          contactId: "<id>"
-        query:
-          archived: false
-      responses:
-        "200":
-          application/json: {"associations": {"key": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": []}}, "createdAt": "2024-08-17T15:34:51.440Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2024-01-04T02:16:38.002Z"}
-        default:
-          '*/*': "0xaE60343E90"
-  updateContact:
-    speakeasy-default-update-contact:
-      parameters:
-        path:
-          contactId: "<id>"
-      requestBody:
-        application/json: {"properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}}
-      responses:
-        "200":
-          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
-        default:
-          '*/*': "0x3b85af6eBc"
-  createContact:
-    speakeasy-default-create-contact:
-      requestBody:
-        application/json: {"associations": [{"types": [{"associationCategory": "HUBSPOT_DEFINED", "associationTypeId": 2}], "to": {"id": "101"}}], "properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
-      responses:
-        "201":
-          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
-        default:
-          '*/*': "0xCaDC2a12a5"
-  getDeal:
-    speakeasy-default-get-deal:
-      parameters:
-        path:
-          dealId: "<id>"
-        query:
-          archived: false
-      responses:
-        "200":
-          application/json: {"associations": {"key": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": []}, "key1": {"paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"id": "<id>", "type": "<value>"}, {"id": "<id>", "type": "<value>"}, {"id": "<id>", "type": "<value>"}]}}, "createdAt": "2023-07-20T20:21:19.136Z", "id": "<id>", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2024-03-20T16:06:40.704Z"}
-        default:
-          '*/*': "0xd7Dbec5428"
-  updateDeal:
-    speakeasy-default-update-deal:
-      parameters:
-        path:
-          dealId: "<id>"
-        query: {}
-      requestBody:
-        application/json: {"properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}}
-      responses:
-        "200":
-          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
-        default:
-          '*/*': "0xbd6bf0D753"
-  createDeal:
-    speakeasy-default-create-deal:
-      requestBody:
-        application/json: {"associations": [{"types": [{"associationCategory": "HUBSPOT_DEFINED", "associationTypeId": 2}], "to": {"id": "101"}}], "properties": {"amount": "1500.00", "dealname": "Custom data integrations", "pipeline": "default", "closedate": "2019-12-07T16:50:06.678Z", "dealstage": "presentationscheduled", "hubspot_owner_id": "910901"}}
-      responses:
-        "201":
-          application/json: {"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"property_date": "1572480000000", "property_radio": "option_1", "property_number": "17", "property_string": "value", "property_checkbox": "false", "property_dropdown": "choice_b", "property_multiple_checkboxes": "chocolate;strawberry"}, "updatedAt": "2019-12-07T16:50:06.678Z"}
-        default:
-          '*/*': "0xad38C8Ad0A"
-  searchCompanies:
-    speakeasy-default-search-companies:
-      requestBody:
-        application/json: {}
-      responses:
-        "200":
-          application/json: {"total": 417690, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
-        default:
-          '*/*': "0x35e6bBbc27"
-  searchContacts:
-    speakeasy-default-search-contacts:
-      requestBody:
-        application/json: {}
-      responses:
-        "200":
-          application/json: {"total": 748860, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
-        default:
-          '*/*': "0x2f94F8F016"
-  searchDeals:
-    speakeasy-default-search-deals:
-      requestBody:
-        application/json: {}
-      responses:
-        "200":
-          application/json: {"total": 265805, "paging": {"next": {"link": "?after=NTI1Cg%3D%3D", "after": "NTI1Cg%3D%3D"}}, "results": [{"createdAt": "2019-10-30T03:30:17.883Z", "archived": false, "id": "512", "properties": {"amount": "1500.00", "closedate": "2019-12-07T16:50:06.678Z", "createdate": "2019-10-30T03:30:17.883Z", "dealname": "Custom data integrations", "dealstage": "presentationscheduled", "hs_lastmodifieddate": "2019-12-07T16:50:06.678Z", "hubspot_owner_id": "910901", "pipeline": "default"}, "updatedAt": "2019-12-07T16:50:06.678Z"}]}
-        default:
-          '*/*': "0x943fFbCFA3"
-examplesVersion: 1.0.0
-generatedTests: {}

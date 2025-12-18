@@ -6,7 +6,7 @@
 import { GetPropertiesRequest } from "mcp-hubspot/models/operations";
 
 let value: GetPropertiesRequest = {
-  objectType: "deals",
+  objectType: "contacts",
 };
 ```
 

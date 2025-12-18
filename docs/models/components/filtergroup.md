@@ -9,7 +9,7 @@ let value: FilterGroup = {
   filters: [
     {
       propertyName: "<value>",
-      operator: "CONTAINS_TOKEN",
+      operator: "LT",
     },
   ],
 };
